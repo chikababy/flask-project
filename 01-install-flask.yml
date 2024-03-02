@@ -4,8 +4,7 @@
   become: yes
   vars:
     app_directory: /home/centos/ansible-flask
-    git_repo_url: 
-
+    git_repo_url: https://github.com/chikababy/flask-project.git
   tasks:
     - name: Update package cache
       yum:
