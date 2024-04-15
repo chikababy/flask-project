@@ -76,8 +76,8 @@
       register: flask_pid
       ignore_errors: yes
 
-    - name: Stop Flask app after 60 seconds
-      shell: "sleep 60 && kill -TERM {{ flask_pid.stdout }}"
+    - name: Stop Flask app after 2400 seconds
+      shell: "sleep 240 && kill -TERM {{ flask_pid.stdout }}"
       ignore_errors: yes
         
 ...
